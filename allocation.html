@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Allocation</title>
+    <link rel="shortcut icon" href="dist/img/favicon.ico">
+    <link rel="stylesheet" href="styles2.css"> 
+    
+</head>
+<body>
+    <div class="hk-wrapper hk-vertical-nav">
+        <!-- Top Navbar -->
+        <?php include_once('includes/navbar.php');
+        include_once('includes/sidebar.php'); ?>
+
+        <div id="hk_nav_backdrop" class="hk-nav-backdrop"></div>
+        <!-- /Vertical Nav -->
+        <!-- Space for sidebar -->
+        <div class="sidebar"></div>
+        <!-- Space for header -->
+        <div class="header"></div>
+
+    <h1>Lesson Allocation</h1>
+    <p>Welcome to NYSEI LeSA Lesson Allocations portal <br> Please select the mode of allocation you want to use</p> <br>
+    
+    <h3>Note:</h3>
+
+    <p>Automatic allocation button will automatically allocate <br>your Lecturer lessons in respective classes without your <br>interventions 
+    while the Manual Allocation will allow you <br>to customize the allocations as you prefer.</p> <br>
+    <div class="button-container">
+        <form action="automatic_allocations.php" method="get">
+            <button type="submit">Automatic Allocation</button>
+        </form>
+        <form action="allocate.php" method="get">
+            <button type="submit">Manual Allocation</button>
+        </form>
+    </div>
+</div>
+    <!-- jQuery -->
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/jquery.slimscroll.js"></script>
+    <script src="dist/js/dropdown-bootstrap-extended.js"></script>
+    <script src="dist/js/feather.min.js"></script>
+    <script src="vendors/jquery-toggles/toggles.min.js"></script>
+    <script src="dist/js/toggle-data.js"></script>
+    <script src="vendors/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="vendors/jquery.counterup/jquery.counterup.min.js"></script>
+    <script src="vendors/jquery.sparkline/dist/jquery.sparkline.min.js"></script>
+    <script src="vendors/vectormap/jquery-jvectormap-2.0.3.min.js"></script>
+    <script src="vendors/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="dist/js/vectormap-data.js"></script>
+    <script src="vendors/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="vendors/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
+    <script src="vendors/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="dist/js/irregular-data-series.js"></script>
+    <script src="dist/js/init.js"></script>
+</body>
+</html>
