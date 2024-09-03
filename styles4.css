@@ -1,0 +1,560 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f2ef;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin-top: 20px;
+}
+
+/* Left Sidebar */
+.sidebar-left {
+    width: 20%;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-right: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.profile-card {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-card h2 {
+    margin-bottom: 5px;
+}
+
+.profile-card p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.profile-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.profile-card ul li {
+    margin-bottom: 10px;
+}
+
+.recent-section {
+    margin-top: 20px;
+}
+
+.recent-section h3 {
+    margin-bottom: 15px;
+}
+
+.recent-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recent-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Main Content Area */
+.main-content {
+    width: 60%;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-right: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.post-section {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+}
+
+.post-section input {
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.post-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-options button {
+    background-color: #0073b1;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.post-options button:last-child {
+    margin-right: 0;
+}
+
+.poll-section {
+    padding: 15px;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.poll-section-2 {
+    padding: 15px;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.poll-section h4 {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.poll-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.poll-section ul li {
+    margin-bottom: 10px;
+}
+
+.poll-section ul li button {
+    width: 30%;
+    padding: 10px;
+    background-color: #0073b1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.poll-section ul li button:hover {
+    background-color: #005582;
+}
+
+
+/* Logo styling */
+.poll-section .logo {
+    width: 100px; /* Adjust the width to reduce the size */
+    height: auto; /* Maintain the aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the logo */
+}
+
+/* Text below the logo */
+.poll-section p {
+    margin-top: 10px; /* Space between the logo and the text */
+    font-size: 16px; /* Adjust font size as needed */
+    line-height: 1.5;
+}
+
+
+
+/* Right Sidebar */
+.sidebar-right {
+    width: 30%;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Upper Section */
+.upper-section {
+    margin-bottom: 20px; /* Space between sections */
+}
+
+.upper-section h3 {
+    margin-bottom: 15px;
+}
+
+.upper-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.upper-section ul li {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upper-section ul li p {
+    margin: 0;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.upper-section ul li button {
+    background-color: #0073b1;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.upper-section ul li button:hover {
+    background-color: #005582;
+}
+
+/* Lower Section */
+.lower-section {
+    margin-top: 20px; /* Space before the lower section */
+}
+
+.lower-section h3 {
+    margin-bottom: 10px;
+}
+
+.lower-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lower-section ul li {
+    margin-bottom: 10px;
+}
+
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay with opacity */
+    padding-top: 60px; /* Location of the box */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    width: 90%; /* Responsive width */
+    max-width: 500px; /* Maximum width */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff0000; /* Change color on hover */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Additional styles for the form */
+#messageForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#messageForm label {
+    margin: 10px 0 5px; /* Space between label and input */
+}
+
+#messageForm select,
+#messageForm textarea {
+    padding: 10px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    resize: none; /* Prevent resizing of textarea */
+}
+
+#messageForm button {
+    background-color: #0073b1; /* LinkedIn blue */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+    margin-top: 10px; /* Space above button */
+}
+
+#messageForm button:hover {
+    background-color: #005582; /* Darker blue on hover */
+}
+ /* Basic styles for modal */
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px; /* Location of the box */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    background-color: #0073b1; 
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for size */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  button:hover {
+    background-color:#005582; /* Darker green on hover */
+  }
+  /* Center the button */
+.button-container {
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+
+  /* Style the Logout button */
+.sidebar-right button {
+    background-color: red; /* Change the background color to red */
+    color: white; /* Ensure the text is visible */
+    border: none; /* Remove the default border */
+    font-size: 16px; /* Adjust the font size */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    border-radius: 5px; /* Add some border-radius for a smoother look */
+    display: block; /* Make the button a block element */
+    margin: auto; /* Center the button horizontally and add vertical spacing */
+    text-align: center; /* Center the text inside the button */
+}
+
+/* Add hover effect */
+.sidebar-right button:hover {
+    background-color: darkred; /* Darken the color on hover */
+}
+
+/* Style for the Get Started image */
+.poll-section .get-started-image {
+    width: 460px; /* Adjust the width as needed */
+    height: 85px; /* Maintain the aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    object-fit: cover; /* Cover the area while maintaining the aspect ratio */
+   
+    
+}
+
+/* Optional: Add hover effect */
+.poll-section .get-started-image:hover {
+    opacity: 0.8; /* Slightly reduce opacity on hover for a visual effect */
+}
+
+
+
+
+* Modal styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000; /* Ensure it appears above other content */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px; /* Maximum width of the magnified image */
+}
+
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Close button styling */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.terms-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.terms-container h1, .terms-container h2 {
+    color: #333;
+}
+
+.terms-container p {
+    line-height: 1.6;
+    color: #666;
+}
+
+.terms-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.terms-container a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+.upper-section-2 {
+    margin-bottom: 20px;
+}
+
+.upper-section-2 .poll-section {
+    text-align: left;
+}
+
+.upper-section-2 h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.upper-section-2 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.upper-section-2 li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.upper-section-2 p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    margin: 0 5px 0 0; /* Adjust margin for spacing between text and button */
+    flex: 1;
+}
+
+.upper-section-2 form {
+    display: inline-block;
+    margin: 0;
+}
+
+.upper-section-2 button {
+    background-color: #0073b1;
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.upper-section-2 button i {
+    margin-right: 5px;
+}
+
+.upper-section-2 button:hover {
+    background-color: #005582;
+}
+
+.upper-section-2 button:focus {
+    outline: none;
+}
+
+
+

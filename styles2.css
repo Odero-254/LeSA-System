@@ -1,0 +1,363 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header .logo {
+    margin: 0 10px;
+    min-height: 50%;
+    max-width: 50%;
+}
+
+
+
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-left: 30px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+h1 {
+    color: #1c3a57;
+    margin: 10px 0;
+}
+
+p {
+    color: #666;
+    margin: 10px 0 10px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    background-color: #f4f4f9;
+}
+
+.show-password {
+    cursor: pointer;
+    color: #1c3a57;
+    margin-left: 10px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.options a {
+    color: #1c3a57;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    max-width: 320px;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+button:hover {
+    background-color: #004494;
+}
+
+button[onclick="goBack();"] {
+    background-color: #e0e0e0;
+    color: #4c4c4c;
+    margin: 20px 0; /* Ensures the back button also has space */
+}
+
+button[onclick="goBack();"]:hover {
+    background-color: #d0d0d0;
+}
+
+
+.request-link {
+    margin-top: 20px;
+    color: #333;
+}
+
+.request-link a {
+    color:  #1782e7;
+    text-decoration: none;
+}
+.request-link a:hover {
+    text-decoration: underline;
+    
+}
+
+
+
+
+.container input[type="email"],
+.container input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    outline: none;
+    width: calc(100% - 22px);
+}
+
+.container button {
+    background-color: #0056b3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.container button:hover {
+    background-color: #004494;
+}
+
+.alert-container {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 400px;
+    z-index: 999;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.alert-close {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.alert-danger {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+}
+
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+
+.otp-verification-container {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.otp-verification-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.otp-verification-container p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.otp-verification-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.otp-verification-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.otp-verification-container button:hover {
+    background-color: #0056b3;
+}
+
+.otp-verification-container a {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.otp-verification-container a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 32px;
+    color: #1a1a57;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 16px;
+    color: #4c4c4c;
+    margin-bottom: 10px;
+
+}
+
+.otp-form {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    width: 350px;
+    margin-top: 20px;
+}
+
+.otp-form input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.button {
+    width: 48%;
+    padding: 12px;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.button:hover {
+    background-color: #004494;
+}
+
+.button[onclick="window.location.href='login.php';"] {
+    background-color: #e0e0e0;
+    color: #4c4c4c;
+}
+
+.button[onclick="window.location.href='login.php';"]:hover {
+    background-color: #d0d0d0;
+}
+
+.otp-form a {
+    display: block;
+    margin-top: 10px;
+    color: #0056b3;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.otp-form a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+.success-message {
+    color: green;
+    font-weight: bold;
+}
