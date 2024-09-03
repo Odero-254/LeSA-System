@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeSA System</title>
+    <link rel="shortcut icon" href="dist/img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="description" content="A responsive bootstrap for dashboard template by hencework" />
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <style>
+        a.SignIn-button {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #0056b3;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 0.9em;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 1px;
+}
+
+a.SignIn-button:hover {
+    background-color: #004494;
+    transform: scale(1.05);
+}
+
+/* General styles for copyright and links */
+footer p {
+    font-size: 0.9em;
+    color: #777;
+    text-align: center;
+    margin-top: 5px; /* Reduced top margin for closer spacing */
+    margin-bottom: 0; /* Removed bottom margin */
+}
+
+/* General styles for copyright and links */
+footer {
+    display: flex; /* Use flexbox to arrange items in a row */
+    flex-direction: row; /* Set direction to row */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    font-size: 0.9em; /* Consistent font size */
+    color: #777; /* Text color */
+    margin-top: 5px; /* Reduced top margin for closer spacing */
+    margin-bottom: 0; /* Removed bottom margin */
+}
+
+/* Link styles */   
+footer a {
+    text-decoration: none; /* Remove underline */
+    color: #0056b3; /* Link color */
+    transition: text-decoration 0.3s; /* Smooth transition for underline */
+    margin: 0 10px; /* Add horizontal space between links */
+}
+
+/* Underline effect on hover */
+footer a:hover {
+    text-decoration: underline; /* Show underline on hover */
+}
+    </style>
+   
+</head>
+<body>
+
+    <div class="container">
+        <img src="dist/img/nyslogo.png" alt="LeSA Logo" class="logo">
+        <h1>LeSA <span class="highlight">System</span></h1>
+        <h2>Use your LeSA login credentials to access all <br>Lesson protocol and schedule</h2>
+        <p>Lecturer Subject Allocation (LeSA) System is an online system
+            that is used by the <br> National Youth Service Engineering Institute to allocate the subjects or units
+            to lecturers, generate <br> timetable and tracks classes/lessons attendance for both lecturers and students.</p>
+        <div class="buttons">
+            <p><a href="login.php" class="SignIn-button"><i class="fas fa-sign-out-alt"></i>Sign In</a></p>   
+        </div>
+        <footer>
+            <p>&copy; <?php echo date("Y"); ?> NYSEI LeSA System. All rights reserved.</p>
+            <a href="terms.html" class="terms-link"><i class="fas fa-file-alt"></i> Terms & Conditions</a>
+            <a href="privacy.html" class="privacy-link"><i class="fas fa-file-alt"></i> Privacy Policy</a>
+        </footer>
+    </div>
+</body>
+</html>
